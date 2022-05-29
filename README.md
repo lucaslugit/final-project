@@ -4,7 +4,7 @@
   * Jie Shao - jiehsao@ucdavis.edu - 915911886
   * member2
 
-* **Stage Finsihed**
+* **Stage Finished**
   * All four parts are finished
 
 * **Instruction To Run Code**
