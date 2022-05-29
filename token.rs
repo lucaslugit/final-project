@@ -27,7 +27,7 @@ impl TokenType {
                     let mut is_var = true;
                     for ch in token_str.chars() {
                         //check if the token could be a var if it start with numericalnumber then it is not a vaild identifier
-                        if ch.is_alphanumeric() == false {
+                        if ch.is_alphabetic() == false {
                             is_var = false;
                             break;
                         }
