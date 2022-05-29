@@ -408,14 +408,20 @@ impl Parser{
 
     fn fn_main(&self, pos: usize) -> Result<usize, String> {
         let mut i = pos;
+        
+        // println!("{:?}",self.all_tokens[i].token_type);
         if self.all_tokens[i].token_type == TokenType::Keyword(String::from("void")) { //void?
             i += 1;
+            // println!("void");
             if self.all_tokens[i].token_type == TokenType::Keyword(String::from("main")) { //main?
                 i += 1;
+                // println!("main");
                 if self.all_tokens[i].token_type == TokenType::Operator(String::from("(")) { //( ?
                     i += 1;
+                    // println!("(");
                     if self.all_tokens[i].token_type == TokenType::Operator(String::from(")")) { 
                         i += 1;
+                        // println!(")");
                         i = self.fn_block(i)?;
                         return Ok(i);
                     }

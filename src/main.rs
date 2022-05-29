@@ -39,8 +39,8 @@ fn main() {
     let parser = Parser::new(all_tokens);
     let result = parser.fn_program();
     if result.is_ok() {
-        xhtml::Output(filename);
         println!("all case passed");
+        xhtml::Output(filename);
     } else {
         println!("{:#?}", result);
     }
