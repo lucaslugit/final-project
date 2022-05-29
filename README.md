@@ -1,7 +1,7 @@
 # final-project
 
 * **Team Members**
-  * Jie Shao - jiehsao@ucdavis.edu - 915911886
+  * Jie Shao - jieshao@ucdavis.edu - 915911886
   * member2
 
 * **Stage Finished**
