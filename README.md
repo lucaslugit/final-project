@@ -2,8 +2,8 @@
 
 * **Team Members**
   * Jie Shao - jieshao@ucdavis.edu - 915911886
-  * member2
-
+  * Yuanhao Lu - yhllu@ucdavis.edu - 917270981
+ 
 * **Stage Finished**
   * All four parts are finished
 
