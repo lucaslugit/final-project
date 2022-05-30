@@ -31,15 +31,15 @@ fn main() {
         match &token.token_type {
             TokenType::Invalid(_) => {
                 all_tokens.push(token);
-                break;
-            }
+                break; //if an invaild token is read - eof or no need to read more - break loop
+            },
             _ => all_tokens.push(token),
         }
     }
     let parser = Parser::new(all_tokens);
     let result = parser.fn_program();
     if result.is_ok() {
-        println!("all case passed");
+        println!("Input program is syntactacilly correct.");
         xhtml::Output(filename);
     } else {
         println!("{:#?}", result);

@@ -57,8 +57,8 @@ pub struct Token {
 }
 
 impl Scanner {
-    pub fn new(stream: CStream) -> Self {
-        Self {
+    pub fn new(stream: CStream) -> Scanner {
+        Scanner {
             stream,
             line_num: 0,
             char_pos: 0,

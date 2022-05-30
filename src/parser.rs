@@ -151,7 +151,7 @@ impl Parser{
         Ok(i)
     }
 
-     fn fn_return(&self, pos: usize) -> Result<usize, String> {
+    fn fn_return(&self, pos: usize) -> Result<usize, String> {
         let mut i = pos;
         if self.all_tokens[i].token_type == TokenType::Keyword(String::from("return")) { //if the token is "return"
             i += 1;
@@ -236,7 +236,7 @@ impl Parser{
                 } else {
                     return Err(format!("Error at Line {} Character {}. The syntax should be: Assignment := Identifier = {{ Identifier = }} Expression ;", self.all_tokens[i].line_num, self.all_tokens[i].char_pos));
                 }
-            }
+            },
             _ => (), // do nothing than error
         }
         Err(format!("Error at Line {} Character {}. The syntax should be: Assignment := Identifier = {{ Identifier = }} Expression ;", self.all_tokens[i].line_num, self.all_tokens[i].char_pos))
