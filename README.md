@@ -28,6 +28,7 @@
   *  https://doc.rust-lang.org/book/ch05-03-method-syntax.html
    * https://doc.rust-lang.org/std/keyword.match.html 
   *  https://doc.rust-lang.org/rust-by-example/flow_control/match.html 
+  *  https://dhghomon.github.io/easy_rust/Chapter_33.html
   *  https://www.geeksforgeeks.org/rust-if-let-operator/ 
    * https://doc.rust-lang.org/std/primitive.char.html#method.is_alphabetic 
   *  https://docs.rs/custom_error/latest/custom_error/macro.custom_error.html 
